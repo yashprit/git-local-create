@@ -1,0 +1,44 @@
+{
+  "name": "git-local-create",
+  "version": "0.0.0-alpha",
+  "description": "perform git init, stupid by useful",
+  "homepage": "yashprit.github.io",
+  "bugs": {
+    "url": "yashprit/git-local-create/issues"
+  },
+  "author": {
+    "url": "yashprit.github.io",
+    "name": "Yashprit",
+    "email": "yashprit@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yashprit/git-local-create"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "git-local-create",
+    "git",
+    "init",
+    "npm",
+    "node",
+    "javascript"
+  ],
+  "dependencies": {
+    "is-git": "0.0.0",
+    "minimist": "^1.1.1"
+  },
+  "devDependencies": {
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "bin": {
+    "git-local-create": "cli.js"
+  }
+}
