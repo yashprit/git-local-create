@@ -8,29 +8,53 @@
 ```sh
 $ npm install --save git-local-create
 ```
+## Example
 
-
-## Usage
+### JavaScript
 
 ```js
 var git-local-create = require('git-local-create');
 
-git-local-create('Rainbow');
+gitLocalCreate(function(err, data){
+  console.log(data) //=> true
+});
 ```
+
+### Command Line reference
 
 ```sh
 $ npm install --global git-local-create
-$ git-local-create --help
+$ git-local-create
 ```
 
+## Methods
 
-##Report Issue 
-[issue-url]
+```js
+var gitLocalCreate = require('git-local-create');
+
+gitLocalCreate(function(err, data){
+  console.log(data) //=> true
+});
+```
+
+### gitLocalCreate([path], cb)
+
+Check if current folder is git folder or not
+
+
+## Run Test
+```sh
+npm test
+```
+
+## Contribute or Report Issue
+For bugs and feature requests, [please create an issue][issue-url].
 
 
 ## License
 
 MIT © [Yashprit](yashprit.github.io)
+
 
 [issue-url]: https://github.com/yashprit/git-local-create/issues
 [npm-url]: https://npmjs.org/package/git-local-create
