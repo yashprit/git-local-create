@@ -32,11 +32,8 @@
     "is-git": "0.0.0",
     "minimist": "^1.1.1"
   },
-  "devDependencies": {
-    "tape": "^3.5.0"
-  },
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha"
   },
   "bin": {
     "git-local-create": "cli.js"
