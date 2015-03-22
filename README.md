@@ -13,7 +13,7 @@ $ npm install --save git-local-create
 ### JavaScript
 
 ```js
-var git-local-create = require('git-local-create');
+var gitLocalCreate = require('git-local-create');
 
 gitLocalCreate(function(err, data){
   console.log(data) //=> true
