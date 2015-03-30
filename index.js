@@ -10,7 +10,7 @@ function createGit(path, cb) {
     if (!exists) {
       exec("git init", function(err, status) {
         if (err) cb(err);
-        if (status === "") cb(null, true);
+        if (status) cb(null, true);
       });
     } else {
       cb(new Error("Already exist"))
