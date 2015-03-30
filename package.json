@@ -1,6 +1,6 @@
 {
   "name": "git-local-create",
-  "version": "0.0.0-alpha",
+  "version": "0.0.0-beta",
   "description": "perform git init, stupid by useful",
   "homepage": "yashprit.github.io",
   "bugs": {
