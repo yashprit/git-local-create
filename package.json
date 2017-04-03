@@ -1,6 +1,6 @@
 {
   "name": "git-local-create",
-  "version": "0.0.0-beta",
+  "version": "0.1.0",
   "description": "perform git init, stupid by useful",
   "homepage": "yashprit.github.io",
   "bugs": {
@@ -9,7 +9,7 @@
   "author": {
     "url": "yashprit.github.io",
     "name": "Yashprit",
-    "email": "yashprit@gmail.com"
+    "email": "yashprit@yashprit.com"
   },
   "repository": {
     "type": "git",
@@ -30,12 +30,15 @@
   ],
   "dependencies": {
     "is-git": "^0.0.1",
-    "minimist": "^1.1.1"
+    "minimist": "^1.2.0"
   },
   "scripts": {
     "test": "mocha"
   },
   "bin": {
     "git-local-create": "cli.js"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
   }
 }
