@@ -29,7 +29,7 @@
     "javascript"
   ],
   "dependencies": {
-    "is-git": "^1.0.0",
+    "is-git": "^1.0.1",
     "minimist": "^1.2.0"
   },
   "scripts": {
