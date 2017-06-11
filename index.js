@@ -13,7 +13,7 @@ function createGit(path, cb) {
         if (status) cb(null, true);
       });
     } else {
-      cb(new Error("Already exist"))
+      cb("Its a git directory", null)
     }
   });
 }

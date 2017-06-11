@@ -8,11 +8,7 @@ var
 gitLocalCreate(function(err, data) {
   if (err) {
     console.error(err);
-    return
+  } else {
+  	console.log(data)
   }
-
-  if (data) {
-    console.log(data)
-  }
-
 });
