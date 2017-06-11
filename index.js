@@ -1,19 +1,22 @@
 'use strict';
 
 var
-  exec = require("child_process").exec,
+  var exec = require("shelljs").exec,
   isGit = require("is-git");
 
 function createGit(path, cb) {
   isGit(path, function(err, exists) {
     if (err) cb(err);
     if (!exists) {
-      exec("git init", function(err, status) {
-        if (err) cb(err);
-        if (status) cb(null, true);
-      });
+      const { stdout, stderr, code } = exec("git init", { silent: true });
+      const output = stdout.replace("\n", "");
+      if(stderr) {
+        cb(err);
+      } else {
+        cb(null, true);
+      }
     } else {
-      cb("Its a git directory", null)
+      cb(null, false);
     }
   });
 }
@@ -33,7 +36,7 @@ module.exports = function(path, cb) {
     if (status) {
       console.log("Folder created")
     } else {
-      console.warn("folder exists")
+      console.warn("Folder exists")
     }
   }
 

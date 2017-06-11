@@ -30,7 +30,8 @@
   ],
   "dependencies": {
     "is-git": "^1.0.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "shelljs": "^0.7.8"
   },
   "scripts": {
     "test": "mocha"
