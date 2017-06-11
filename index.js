@@ -1,7 +1,7 @@
 'use strict';
 
 var
-  var exec = require("shelljs").exec,
+  exec = require("shelljs").exec,
   isGit = require("is-git");
 
 function createGit(path, cb) {
